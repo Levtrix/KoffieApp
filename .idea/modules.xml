@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KoffieAppDatabase/KoffieAppDatabase.iml" filepath="$PROJECT_DIR$/KoffieAppDatabase/KoffieAppDatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/KoffieAppFrontEnd/KoffieAppFrontEnd.iml" filepath="$PROJECT_DIR$/KoffieAppFrontEnd/KoffieAppFrontEnd.iml" />
     </modules>
   </component>
