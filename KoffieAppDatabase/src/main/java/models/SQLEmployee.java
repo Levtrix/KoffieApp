@@ -1,8 +1,21 @@
-package Models;
+package models;
 
-public class Employee {
+import org.hibernate.annotations.GenericGenerator;
+import javax.persistence.*;
+
+@Entity
+@Table(name = "employee_table")
+public class SQLEmployee {
+    @Id
+    @Column(name = "employeeId", nullable = false)
+    @GeneratedValue(generator = "incrementor")
+    @GenericGenerator(name = "incrementor", strategy = "increment")
     private int employeeId;
+
+    @Column(name = "firstName", nullable = false)
     private String firstName;
+
+    @Column(name = "lastName", nullable = false)
     private String lastName;
 
     // Getters and setters
@@ -19,29 +32,23 @@ public class Employee {
     }
 
     public String getLastName() {
-        return lastName;
+        return  lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    // Constructors
-    public Employee() {}
+    public SQLEmployee() {}
 
-    public Employee(String firstName, String lastName) {
+    public SQLEmployee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public Employee(int employeeId, String firstName, String lastName) {
+    public SQLEmployee(int employeeId, String firstName, String lastName) {
         this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    @Override
-    public String toString() {
-        return firstName + " " + lastName;
     }
 }

@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
@@ -25,6 +25,17 @@ public class SQLDrink {
     }
 
     public void setName(String name) {
+        this.name = name;
+    }
+
+    public SQLDrink() {}
+
+    public SQLDrink(String name) {
+        this.name = name;
+    }
+
+    public SQLDrink(int drinkId, String name) {
+        this.drinkId = drinkId;
         this.name = name;
     }
 }

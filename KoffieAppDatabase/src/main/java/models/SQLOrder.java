@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -13,8 +13,8 @@ public class SQLOrder {
     @GenericGenerator(name = "incrementor", strategy = "increment")
     private int orderId;
 
-    //private SQLEmployee employee;
-    //private SQLDrink drink;
+    private SQLEmployee employee;
+    private SQLDrink drink;
 
     @Column(name = "sugarAmount", nullable = false)
     private int sugarAmount;
@@ -42,6 +42,14 @@ public class SQLOrder {
     }
 
     public void setMilkAmount(int milkAmount) {
+        this.milkAmount = milkAmount;
+    }
+
+    public SQLOrder() {}
+
+    public SQLOrder(int orderId, int sugarAmount, int milkAmount, SQLEmployee employee, SQLDrink drink) {
+        this.orderId = orderId;
+        this.sugarAmount = sugarAmount;
         this.milkAmount = milkAmount;
     }
 
