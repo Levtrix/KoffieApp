@@ -1,10 +1,10 @@
 package dal.repository;
 
-import models.Drink;
+import models.SQLDrink;
 
-public class DrinkRepository extends AbstractRepository<Drink, Integer> {
+public class DrinkRepository extends AbstractRepository<SQLDrink, Integer> {
     @Override
-    public Class<Drink> getDomainClass() {
-        return Drink.class;
+    public Class<SQLDrink> getDomainClass() {
+        return SQLDrink.class;
     }
 }

@@ -1,5 +1,12 @@
 package KoffieRESTServer;
 
+import KoffieRESTServer.handlers.*;
+import KoffieRESTServer.restservices.DrinkService;
+import KoffieRESTServer.restservices.EmployeeService;
+import KoffieRESTServer.restservices.OrderService;
+import dal.repository.DrinkRepository;
+import dal.repository.EmployeeRepository;
+import dal.repository.OrderRepository;
 import logging.Logger;
 import org.eclipse.jetty.server.*;
 import org.eclipse.jetty.servlet.FilterHolder;
@@ -36,8 +43,9 @@ public class RestServer {
         https.addCustomizer(new SecureRequestCustomizer());
 
         SslContextFactory sslContextFactory = new SslContextFactory();
-        //TODO: Implement keystore
-        //sslContextFactory.setKeyStorePath();
+        sslContextFactory.setKeyStorePath(RestServer.class.getResource("/keystore.jks").toExternalForm());
+        sslContextFactory.setKeyStorePassword("qwerty");
+        sslContextFactory.setKeyManagerPassword("qwerty");
 
         ServerConnector sslConnector = new ServerConnector(jettyServer,
                 new SslConnectionFactory(sslContextFactory, "http/1.1"),
@@ -56,9 +64,19 @@ public class RestServer {
         jettyServer.setHandler(context);
         ServletHolder jerseyServlet = context.addServlet(ServletContainer.class, "/*");
         jerseyServlet.setInitOrder(0);
-        //TODO: Implement handlers + services
+
+        // Creating handlers
+        IDrinkHandler drinkHandler = new DrinkHandler(new DrinkRepository());
+        IEmployeeHandler employeeHandler = new EmployeeHandler(new EmployeeRepository());
+        IOrderHandler orderHandler = new OrderHandler(new OrderRepository(), new DrinkRepository(), new EmployeeRepository());
+
+        DrinkService.setHandler(drinkHandler);
+        EmployeeService.setHandler(employeeHandler);
+        OrderService.setHandler(orderHandler);
+
         // Tells the Jersey Servlet which REST service/class to load.
-        String services = null;
+         String services = DrinkService.class.getCanonicalName() + ", " + EmployeeService.class.getCanonicalName() + ", " + OrderService.class.getCanonicalName();
+         // "restservices.DrinkService, restservices.EmployeeService, restservices.OrderService"
 
         jerseyServlet.setInitParameter("jersey.config.server.provider.classnames", services);
         try {

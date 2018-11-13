@@ -28,19 +28,19 @@ public class Order {
         this.drink = drink;
     }
 
-    private int getSugarAmount() {
+    public int getSugarAmount() {
         return sugarAmount;
     }
 
-    private void setSugarAmount(int sugarAmount) {
+    public void setSugarAmount(int sugarAmount) {
         this.sugarAmount = sugarAmount;
     }
 
-    private int getMilkAmount() {
+    public int getMilkAmount() {
         return milkAmount;
     }
 
-    private void setMilkAmount(int milkAmount) {
+    public void setMilkAmount(int milkAmount) {
         this.milkAmount = milkAmount;
     }
 

@@ -13,8 +13,8 @@ public class SQLOrder {
     @GenericGenerator(name = "incrementor", strategy = "increment")
     private int orderId;
 
-    private SQLEmployee employee;
-    private SQLDrink drink;
+    private int employeeId;
+    private int drinkId;
 
     @Column(name = "sugarAmount", nullable = false)
     private int sugarAmount;
@@ -35,7 +35,21 @@ public class SQLOrder {
         this.sugarAmount = sugarAmount;
     }
 
-    //TODO: add employee and drink relations
+    public int getEmployeeId() {
+        return this.employeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public int getDrinkId() {
+        return this.drinkId;
+    }
+
+    public void setDrinkId(int drinkId) {
+        this.drinkId = drinkId;
+    }
 
     public int getMilkAmount() {
         return milkAmount;
@@ -47,10 +61,12 @@ public class SQLOrder {
 
     public SQLOrder() {}
 
-    public SQLOrder(int orderId, int sugarAmount, int milkAmount, SQLEmployee employee, SQLDrink drink) {
+    public SQLOrder(int orderId, int sugarAmount, int milkAmount, int employeeId, int drinkId) {
         this.orderId = orderId;
         this.sugarAmount = sugarAmount;
         this.milkAmount = milkAmount;
+        this.employeeId = employeeId;
+        this.drinkId = drinkId;
     }
 
 }

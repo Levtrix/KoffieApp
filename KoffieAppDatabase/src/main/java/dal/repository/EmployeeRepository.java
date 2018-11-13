@@ -1,10 +1,10 @@
 package dal.repository;
 
-import models.Employee;
+import models.SQLEmployee;
 
-public class EmployeeRepository extends AbstractRepository<Employee, Integer> {
+public class EmployeeRepository extends AbstractRepository<SQLEmployee, Integer> {
     @Override
-    public Class<Employee> getDomainClass() {
-        return Employee.class;
+    public Class<SQLEmployee> getDomainClass() {
+        return SQLEmployee.class;
     }
 }

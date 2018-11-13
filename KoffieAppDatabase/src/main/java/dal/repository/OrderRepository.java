@@ -1,10 +1,10 @@
 package dal.repository;
 
-import models.Order;
+import models.SQLOrder;
 
-public class OrderRepository extends AbstractRepository<Order, Integer> {
+public class OrderRepository extends AbstractRepository<SQLOrder, Integer> {
     @Override
-    public Class<Order> getDomainClass() {
-        return Order.class;
+    public Class<SQLOrder> getDomainClass() {
+        return SQLOrder.class;
     }
 }
