@@ -61,20 +61,27 @@ public class OrderHandler implements IOrderHandler{
 
     @Override
     public Reply getOrder(int orderId) {
-        try {
-            SQLOrder o = orderRepository.findOne(orderId);
-            SQLDrink tmp = drinkRepository.findOne(o.getDrinkId());
-            Drink drink = new Drink(tmp.getDrinkId(), tmp.getName());
-            SQLEmployee tmp1 = employeeRepository.findOne(o.getEmployeeId());
-            Employee employee = new Employee(tmp1.getEmployeeId(), tmp1.getFirstName(), tmp1.getLastName());
+        if (orderId != 0) {
+            try {
+                SQLOrder o = orderRepository.findOne(orderId);
+                SQLDrink tmp = drinkRepository.findOne(o.getDrinkId());
+                Drink drink = new Drink(tmp.getDrinkId(), tmp.getName());
+                SQLEmployee tmp1 = employeeRepository.findOne(o.getEmployeeId());
+                Employee employee = new Employee(tmp1.getEmployeeId(), tmp1.getFirstName(), tmp1.getLastName());
 
-            Order order = new Order(o.getDrinkId(), employee, drink, o.getSugarAmount(), o.getMilkAmount());
+                Order order = new Order(o.getDrinkId(), employee, drink, o.getSugarAmount(), o.getMilkAmount());
 
-            String json = gson.toJson(new OrderJson(order.getOrderId(), order.getEmployee(), order.getDrink(), order.getSugarAmount(), order.getMilkAmount()));
+                String json = gson.toJson(new OrderJson(order.getOrderId(), order.getEmployee(), order.getDrink(), order.getSugarAmount(), order.getMilkAmount()));
 
-            return new Reply(Status.OK, json);
-        } catch (Exception e) {
-            Logger.getInstance().log(e);
+                return new Reply(Status.OK, json);
+            } catch (Exception e) {
+                Logger.getInstance().log(e);
+                ErrorJson errorJson = new ErrorJson("Something went wrong");
+
+                return new Reply(Status.ERROR, gson.toJson(errorJson));
+            }
+        }
+        else {
             ErrorJson errorJson = new ErrorJson("Something went wrong");
 
             return new Reply(Status.ERROR, gson.toJson(errorJson));
