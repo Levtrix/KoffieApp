@@ -1,4 +1,4 @@
-package KoffieAppRESTServer.models;
+package models;
 
 import org.junit.Test;
 
