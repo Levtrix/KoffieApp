@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc67f42a-6263-4612-85a2-b3ff0cec4a45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/DrinkTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/EmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/OrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentatie/Opdracht.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentatie/Opdracht.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppDatabase/models/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppDatabase/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppDatabase/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IDrinkHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IDrinkHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IEmployeeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IEmployeeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IOrderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IOrderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/response/OrderJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/response/OrderJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/OrderService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/KoffieAppDatabase/target/" />
@@ -53,7 +35,7 @@
           <entry key="dummy" value="31" />
           <entry key="java" value="10667" />
           <entry key="md" value="106" />
-          <entry key="txt" value="363" />
+          <entry key="txt" value="379" />
           <entry key="xml" value="171" />
         </counts>
       </usages-collector>
@@ -61,7 +43,7 @@
         <counts>
           <entry key="JAVA" value="10667" />
           <entry key="Markdown" value="106" />
-          <entry key="PLAIN_TEXT" value="394" />
+          <entry key="PLAIN_TEXT" value="410" />
           <entry key="XML" value="171" />
         </counts>
       </usages-collector>
@@ -171,23 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Order.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-119">
               <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/OrderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -365,7 +335,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542788830923" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542790242494" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
@@ -421,7 +391,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KoffieAppRESTServer.models in KoffieApp">
+  <component name="RunManager" selected="JUnit.All in KoffieApp">
     <configuration name="RestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KoffieAppRESTServer.RestServer" />
       <module name="KoffieApp" />
@@ -431,6 +401,31 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All Features in: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KoffieApp" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in KoffieApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KoffieApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -521,9 +516,13 @@
       <item itemvalue="npm.Angular CLI Server (KoffieAppFrontEnd)" />
       <item itemvalue="Application.RestServer" />
       <item itemvalue="JUnit.KoffieAppRESTServer.models in KoffieApp" />
+      <item itemvalue="Cucumber java.All Features in: test" />
+      <item itemvalue="JUnit.All in KoffieApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in KoffieApp" />
+        <item itemvalue="Cucumber java.All Features in: test" />
         <item itemvalue="JUnit.KoffieAppRESTServer.models in KoffieApp" />
         <item itemvalue="Application.RestServer" />
       </list>
@@ -558,7 +557,7 @@
       <workItem from="1542201360001" duration="1070000" />
       <workItem from="1542209269461" duration="1181000" />
       <workItem from="1542212234654" duration="118000" />
-      <workItem from="1542788375856" duration="451000" />
+      <workItem from="1542788375856" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1540805028872</created>
@@ -651,16 +650,32 @@
       <option name="project" value="LOCAL" />
       <updated>1542212324004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added unit tests">
+      <created>1542788886021</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542788886021</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="KoffieAppRESTServer_models_in_KoffieApp - 2018.11.21 at 09h 23m 36s.xml">
       <configuration name="KoffieAppRESTServer.models in KoffieApp" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="KoffieAppRESTServer_models_in_KoffieApp - 2018.11.21 at 09h 27m 14s.xml">
+      <configuration name="KoffieAppRESTServer.models in KoffieApp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_Features_in__test - 2018.11.21 at 09h 50m 26s.xml">
+      <configuration name="All Features in: test" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_KoffieApp - 2018.11.21 at 09h 50m 39s.xml">
+      <configuration name="All in KoffieApp" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36619000" />
+    <option name="totallyTimeSpent" value="37312000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,9 +688,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -686,7 +700,7 @@
       <window_info id="npm" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33044422" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33044422" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -760,7 +774,8 @@
     <MESSAGE value="Implemented ORM + REST server. Unit Testing still needs to be added" />
     <MESSAGE value="Reworked entire project structure" />
     <MESSAGE value="Started with errorhandling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started with errorhandling" />
+    <MESSAGE value="Added unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/response/OrderJson.java">
@@ -1019,13 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1033,6 +1041,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
