@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc67f42a-6263-4612-85a2-b3ff0cec4a45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/DrinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/DrinkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/KoffieAppDatabase/target/" />
@@ -38,16 +37,16 @@
           <entry key="dummy" value="31" />
           <entry key="java" value="10712" />
           <entry key="md" value="106" />
-          <entry key="txt" value="434" />
-          <entry key="xml" value="171" />
+          <entry key="txt" value="446" />
+          <entry key="xml" value="172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="10712" />
           <entry key="Markdown" value="106" />
-          <entry key="PLAIN_TEXT" value="465" />
-          <entry key="XML" value="171" />
+          <entry key="PLAIN_TEXT" value="477" />
+          <entry key="XML" value="172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,7 +60,7 @@
           <entry key="json" value="1" />
           <entry key="md" value="1" />
           <entry key="ts" value="4" />
-          <entry key="xml" value="25" />
+          <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -74,7 +73,7 @@
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="4" />
-          <entry key="XML" value="25" />
+          <entry key="XML" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -135,8 +134,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/DrinkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="272">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -144,13 +155,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/EmployeeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/models/OrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -216,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.default.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppREST/KoffieRESTServer/handlers/IOrderHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppREST/KoffieRESTServer/handlers/OrderHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/DrinkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/EmployeeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/KoffieAppRESTServer/models/OrderTest.java" />
@@ -228,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/test/java/models/DrinkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/EmployeeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/OrderTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -238,7 +252,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -332,7 +346,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542792778601" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542793887616" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
@@ -521,8 +535,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in KoffieApp" />
-        <item itemvalue="Application.RestServer" />
         <item itemvalue="Cucumber java.All Features in: test" />
+        <item itemvalue="Application.RestServer" />
         <item itemvalue="JUnit.KoffieAppRESTServer.models in KoffieApp" />
       </list>
     </recent_temporary>
@@ -556,7 +570,7 @@
       <workItem from="1542201360001" duration="1070000" />
       <workItem from="1542209269461" duration="1181000" />
       <workItem from="1542212234654" duration="118000" />
-      <workItem from="1542788375856" duration="3678000" />
+      <workItem from="1542788375856" duration="4672000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1540805028872</created>
@@ -691,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542792463231</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Edited tests">
+      <created>1542792830122</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1542792830122</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -719,9 +740,15 @@
     <history-entry file="All_in_KoffieApp - 2018.11.21 at 10h 31m 49s.xml">
       <configuration name="All in KoffieApp" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_Features_in__test - 2018.11.21 at 10h 50m 37s.xml">
+      <configuration name="All Features in: test" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_KoffieApp - 2018.11.21 at 10h 50m 45s.xml">
+      <configuration name="All in KoffieApp" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39846000" />
+    <option name="totallyTimeSpent" value="40840000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,7 +862,8 @@
     <MESSAGE value="Added documentation" />
     <MESSAGE value="Moved tests to different location" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Edited tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/ClassLoader.java">
@@ -1033,13 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/models/Drink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1084,24 +1105,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/DrinkTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/OrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/EmployeeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/OrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/DrinkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
         </state>
       </provider>
     </entry>
