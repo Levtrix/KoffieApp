@@ -1,7 +1,7 @@
 package models;
 
 import KoffieAppRESTServer.models.Drink;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
