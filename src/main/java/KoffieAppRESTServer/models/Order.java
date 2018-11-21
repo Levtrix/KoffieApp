@@ -1,4 +1,4 @@
-package KoffieAppDatabase.models;
+package KoffieAppRESTServer.models;
 
 public class Order {
     private int orderId;

@@ -1,5 +1,8 @@
 package KoffieAppRESTServer.handlers;
 
+import KoffieAppRESTServer.models.Drink;
+import KoffieAppRESTServer.models.Employee;
+import KoffieAppRESTServer.models.Order;
 import KoffieAppRESTServer.response.ErrorJson;
 import KoffieAppRESTServer.response.OrderJson;
 import KoffieAppRESTServer.response.Reply;

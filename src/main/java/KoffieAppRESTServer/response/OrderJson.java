@@ -1,7 +1,7 @@
 package KoffieAppRESTServer.response;
 
-import KoffieAppDatabase.models.Drink;
-import KoffieAppDatabase.models.Employee;
+import KoffieAppRESTServer.models.Drink;
+import KoffieAppRESTServer.models.Employee;
 
 public class OrderJson {
     private int orderId;

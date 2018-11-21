@@ -7,7 +7,7 @@ import KoffieAppRESTServer.response.Status;
 import com.google.gson.Gson;
 import KoffieAppDatabase.dal.repository.EmployeeRepository;
 import KoffieAppDatabase.logging.Logger;
-import KoffieAppDatabase.models.Employee;
+import KoffieAppRESTServer.models.Employee;
 import KoffieAppDatabase.models.SQLEmployee;
 
 import java.util.ArrayList;

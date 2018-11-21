@@ -3,7 +3,7 @@ package KoffieAppRESTServer.restservices;
 import KoffieAppRESTServer.handlers.IEmployeeHandler;
 import KoffieAppRESTServer.response.Reply;
 import com.google.gson.Gson;
-import KoffieAppDatabase.models.Employee;
+import KoffieAppRESTServer.models.Employee;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;

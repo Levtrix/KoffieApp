@@ -3,7 +3,7 @@ package KoffieAppRESTServer.restservices;
 import KoffieAppRESTServer.handlers.IDrinkHandler;
 import KoffieAppRESTServer.response.Reply;
 import com.google.gson.Gson;
-import KoffieAppDatabase.models.Drink;
+import KoffieAppRESTServer.models.Drink;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;

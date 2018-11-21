@@ -1,7 +1,7 @@
 package KoffieAppRESTServer.handlers;
 
 import KoffieAppRESTServer.response.Reply;
-import KoffieAppDatabase.models.Order;
+import KoffieAppRESTServer.models.Order;
 
 public interface IOrderHandler {
     Reply getOrders();
