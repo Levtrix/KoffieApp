@@ -1,5 +1,8 @@
 package models;
 
+import KoffieAppRESTServer.models.Drink;
+import KoffieAppRESTServer.models.Employee;
+import KoffieAppRESTServer.models.Order;
 import org.junit.Before;
 import org.junit.Test;
 

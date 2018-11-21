@@ -1,5 +1,6 @@
 package KoffieAppRESTServer.handlers;
 
+import KoffieAppRESTServer.models.Drink;
 import KoffieAppRESTServer.response.DrinkJson;
 import KoffieAppRESTServer.response.ErrorJson;
 import KoffieAppRESTServer.response.Reply;
@@ -7,7 +8,6 @@ import KoffieAppRESTServer.response.Status;
 import com.google.gson.Gson;
 import KoffieAppDatabase.dal.repository.DrinkRepository;
 import KoffieAppDatabase.logging.Logger;
-import KoffieAppRESTServer.models.Drink;
 import KoffieAppDatabase.models.SQLDrink;
 
 import java.util.ArrayList;
