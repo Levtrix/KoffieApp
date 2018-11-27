@@ -26,6 +26,7 @@ public class EmployeeHandler implements IEmployeeHandler {
     @Override
     public Reply getEmployees() {
         try {
+            addEmployees();
             List<Employee> employees = new ArrayList<>();
             List<EmployeeJson> employeeResponse = new ArrayList<>();
 
@@ -72,5 +73,13 @@ public class EmployeeHandler implements IEmployeeHandler {
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
         return new Reply(Status.ERROR, gson.toJson(errorJson));
+    }
+
+    private void addEmployees() {
+        SQLEmployee employee1 = new SQLEmployee("Henk", "Ruijter");
+        SQLEmployee employee2 = new SQLEmployee("Sanne", "Pell");
+
+        employeeRepository.save(employee1);
+        employeeRepository.save(employee2);
     }
 }

@@ -25,6 +25,7 @@ public class DrinkHandler implements IDrinkHandler{
     @Override
     public Reply getDrinks() {
         try {
+            addDrinks();
             List<Drink> drinks = new ArrayList<>();
             List<DrinkJson> drinkReponse = new ArrayList<>();
 
@@ -72,5 +73,17 @@ public class DrinkHandler implements IDrinkHandler{
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
         return new Reply(Status.ERROR, gson.toJson(errorJson));
+    }
+
+    private void addDrinks() {
+        SQLDrink drink1 = new SQLDrink("Koffie");
+        SQLDrink drink2 = new SQLDrink("Thee");
+        SQLDrink drink3 = new SQLDrink("Cappucchinno");
+        SQLDrink drink4 = new SQLDrink("Latte");
+
+        drinkRepository.save(drink1);
+        drinkRepository.save(drink2);
+        drinkRepository.save(drink3);
+        drinkRepository.save(drink4);
     }
 }

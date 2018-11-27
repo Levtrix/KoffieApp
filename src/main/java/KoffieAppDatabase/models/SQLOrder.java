@@ -8,12 +8,13 @@ import javax.persistence.*;
 @Table(name = "order_table")
 public class SQLOrder {
     @Id
-    @Column(name = "orderId", nullable = false)
-    @GeneratedValue(generator = "incrementor")
-    @GenericGenerator(name = "incrementor", strategy = "increment")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int orderId;
 
+    @Column(name = "employeeId", nullable = false)
     private int employeeId;
+
+    @Column(name = "drinkId", nullable = false)
     private int drinkId;
 
     @Column(name = "sugarAmount", nullable = false)
@@ -60,6 +61,13 @@ public class SQLOrder {
     }
 
     public SQLOrder() {}
+
+    public SQLOrder(int sugarAmount, int milkAmount, int employeeId, int drinkId) {
+        this.sugarAmount = sugarAmount;
+        this.milkAmount = milkAmount;
+        this.employeeId = employeeId;
+        this.drinkId = drinkId;
+    }
 
     public SQLOrder(int orderId, int sugarAmount, int milkAmount, int employeeId, int drinkId) {
         this.orderId = orderId;

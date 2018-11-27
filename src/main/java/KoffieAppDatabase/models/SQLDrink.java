@@ -7,9 +7,7 @@ import javax.persistence.*;
 @Table(name = "drink_table")
 public class SQLDrink {
     @Id
-    @Column(name = "drinkId", nullable = false)
-    @GeneratedValue(generator = "incrementor")
-    @GenericGenerator(name = "incrementor", strategy = "increment")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int drinkId;
 
     @Column(name = "name", nullable = false)

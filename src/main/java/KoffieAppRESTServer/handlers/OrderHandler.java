@@ -31,10 +31,10 @@ public class OrderHandler implements IOrderHandler{
         this.employeeRepository = employeeRepository;
     }
 
-    // TODO: Add better error handling
     @Override
     public Reply getOrders() {
         try {
+            addOrders();
             List<Order> orders = new ArrayList<>();
             List<OrderJson> orderResponse = new ArrayList<>();
 
@@ -110,7 +110,6 @@ public class OrderHandler implements IOrderHandler{
         return new Reply(Status.ERROR, gson.toJson(errorJson));
     }
 
-    //TODO: Check if this is the correct way of handling this
     @Override public Reply deleteOrder(int orderId) {
         try {
             orderRepository.delete(orderId);
@@ -122,5 +121,15 @@ public class OrderHandler implements IOrderHandler{
 
             return new Reply(Status.ERROR, gson.toJson(errorJson));
         }
+    }
+
+    private void addOrders() {
+        SQLOrder order1 = new SQLOrder(2, 1, 1, 1);
+        SQLOrder order2 = new SQLOrder(0, 0, 2, 4);
+        SQLOrder order3 = new SQLOrder(2, 0, 1, 3);
+
+        orderRepository.save(order1);
+        orderRepository.save(order2);
+        orderRepository.save(order3);
     }
 }
