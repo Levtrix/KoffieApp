@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="hibernate.default.cfg.xml/Hibernate" uuid="75c348e0-8900-49b5-a402-d8608eb3f3f7">
-      <driver-ref>mysql</driver-ref>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="88eb888c-f7d3-487a-be58-3c3be204801e">
+      <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>Hibernate
 
-E:/OneDrive/KoffieApp/src/main/resources/hibernate.default.cfg.xml</remarks>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://studmysql01.fhict.local/dbi356515</jdbc-url>
+E:/OneDrive/KoffieApp/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://koffie.gledant.nl/dbi356515</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="yearIsDateType" value="false" />

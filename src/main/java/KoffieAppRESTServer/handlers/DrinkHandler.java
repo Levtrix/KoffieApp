@@ -25,15 +25,10 @@ public class DrinkHandler implements IDrinkHandler{
     @Override
     public Reply getDrinks() {
         try {
-            addDrinks();
-            List<Drink> drinks = new ArrayList<>();
+            //addDrinks();
             List<DrinkJson> drinkReponse = new ArrayList<>();
 
             for (SQLDrink d : drinkRepository.findAll()) {
-                drinks.add(new Drink(d.getDrinkId(), d.getName()));
-            }
-
-            for (Drink d : drinks) {
                 drinkReponse.add(new DrinkJson(d.getDrinkId(), d.getName()));
             }
 

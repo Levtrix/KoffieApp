@@ -34,6 +34,7 @@ public class RestServer {
         // endregion
 
         jettyServer.setHandler(context);
+
         ServletHolder jerseyServlet = context.addServlet(ServletContainer.class, "/*");
         jerseyServlet.setInitOrder(0);
 
