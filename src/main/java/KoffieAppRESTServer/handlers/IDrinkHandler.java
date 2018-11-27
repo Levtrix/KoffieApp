@@ -7,4 +7,5 @@ public interface IDrinkHandler {
     Reply getDrinks();
     Reply getDrink(int drinkId);
     Reply saveDrink(Drink drink);
+    Reply deleteDrink(int drinkId);
 }

@@ -9,9 +9,5 @@
         <module name="KoffieApp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="KoffieAppDatabase" target="8" />
-      <module name="KoffieAppREST" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

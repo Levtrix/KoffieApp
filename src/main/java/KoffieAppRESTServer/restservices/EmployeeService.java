@@ -8,7 +8,7 @@ import KoffieAppRESTServer.models.Employee;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/KoffieApp//employee")
+@Path("/KoffieApp/employee")
 public class EmployeeService {
     private static IEmployeeHandler handler;
     private Gson gson = new Gson();

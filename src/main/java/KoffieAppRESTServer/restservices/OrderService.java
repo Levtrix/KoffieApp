@@ -8,7 +8,7 @@ import KoffieAppRESTServer.models.Order;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/KoffieApp//order")
+@Path("/KoffieApp/order")
 public class OrderService {
     private static IOrderHandler handler;
     private Gson gson = new Gson();

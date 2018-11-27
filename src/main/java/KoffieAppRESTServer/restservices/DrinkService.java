@@ -43,4 +43,12 @@ public class DrinkService {
 
         return Response.status(reply.getStatus().getCode()).entity(reply.getMessage()).build();
     }
+
+    @DELETE
+    @Path("delete/{id}")
+    public Response deleteDrink(@PathParam("id") int drinkId) {
+        Reply reply = handler.deleteDrink(drinkId);
+
+        return Response.status(reply.getStatus().getCode()).entity(reply.getMessage()).build();
+    }
 }

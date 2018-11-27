@@ -110,7 +110,8 @@ public class OrderHandler implements IOrderHandler{
         return new Reply(Status.ERROR, gson.toJson(errorJson));
     }
 
-    @Override public Reply deleteOrder(int orderId) {
+    @Override
+    public Reply deleteOrder(int orderId) {
         try {
             orderRepository.delete(orderId);
 

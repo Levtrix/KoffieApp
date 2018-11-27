@@ -7,3 +7,6 @@ Stel je voor. Je zit lekker te werken en hebt zin in een kopje koffie. Echter, j
 Een beetje koffieautomaat kan ook verschillende soorten koffie (zwart, crème, latte, cappuccino) en thee produceren. De melk- en suikerhoeveelheden zijn zelf in te stellen. Uiteindelijk krijg je bij het bestellen dan een code te zien die precies jouw kopje koffie definieert. Deze code kan degene die de koffie gaat halen zien per bestelling en gebruiken om zo snel mogelijk de bestelling af te halen.
 
 Als je eenmaal verder bent kun je ook badges uit gaan delen voor de collega die het vaakst koffie gaat halen, of degene die de meeste koffie heeft besteld. Je kunt ook statistieken laten zien en grafieken tekenen. Ook kun je zien wanneer de kans het grootst is op een rustig bezoek aan de automaat gebaseerd op de historische gegevens. Uitbreidingsmogelijkheden te over!
+
+
+http://localhost:8095/KoffieApp/

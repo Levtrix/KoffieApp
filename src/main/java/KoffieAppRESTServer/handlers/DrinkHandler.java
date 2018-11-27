@@ -75,6 +75,19 @@ public class DrinkHandler implements IDrinkHandler{
         return new Reply(Status.ERROR, gson.toJson(errorJson));
     }
 
+    @Override
+    public Reply deleteDrink(int drinkId) {
+        try {
+            drinkRepository.delete(drinkId);
+
+            return new Reply(Status.OK, gson.toJson(drinkId));
+        } catch (Exception e) {
+            ErrorJson errorJson = new ErrorJson("Something went wrong");
+
+            return new Reply(Status.ERROR, gson.toJson(errorJson));
+        }
+    }
+
     private void addDrinks() {
         SQLDrink drink1 = new SQLDrink("Koffie");
         SQLDrink drink2 = new SQLDrink("Thee");
