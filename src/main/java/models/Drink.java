@@ -1,21 +1,20 @@
-package KoffieAppDatabase.models;
+package models;
 
-import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "drink_table")
-public class SQLDrink {
+public class Drink {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int drinkId;
+    private int id;
 
     @Column(name = "name", nullable = false)
     private String name;
 
     // Getters and setters
-    public int getDrinkId() {
-        return drinkId;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -26,14 +25,20 @@ public class SQLDrink {
         this.name = name;
     }
 
-    public SQLDrink() {}
+    // Constructors
+    public Drink() {}
 
-    public SQLDrink(String name) {
+    public Drink(String name) {
         this.name = name;
     }
 
-    public SQLDrink(int drinkId, String name) {
-        this.drinkId = drinkId;
+    public Drink(int id, String name) {
+        this.id = id;
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

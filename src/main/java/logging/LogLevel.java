@@ -1,4 +1,4 @@
-package KoffieAppDatabase.logging;
+package logging;
 
 public enum LogLevel {
     DEBUG,

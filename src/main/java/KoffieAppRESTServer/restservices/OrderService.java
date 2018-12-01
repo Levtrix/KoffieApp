@@ -3,15 +3,15 @@ package KoffieAppRESTServer.restservices;
 import KoffieAppRESTServer.handlers.IOrderHandler;
 import KoffieAppRESTServer.response.Reply;
 import com.google.gson.Gson;
-import KoffieAppRESTServer.models.Order;
+import models.Order;
+import utils.GsonUtils;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/KoffieApp/order")
+@Path("/order")
 public class OrderService {
     private static IOrderHandler handler;
-    private Gson gson = new Gson();
 
     public static void setHandler(IOrderHandler handler) {
         OrderService.handler = handler;
@@ -37,7 +37,7 @@ public class OrderService {
     @Path("/save")
     @Consumes("application/json")
     public Response saveOrder(String data) {
-        Order order = gson.fromJson(data, Order.class);
+        Order order = GsonUtils.fromJson(data, Order.class);
 
         Reply reply = handler.saveOrder(order);
 
@@ -48,7 +48,7 @@ public class OrderService {
     @Path("/edit")
     @Consumes("application/json")
     public Response editOrder(String data) {
-        Order order = gson.fromJson(data, Order.class);
+        Order order = GsonUtils.fromJson(data, Order.class);
 
         Reply reply = handler.saveOrder(order);
 

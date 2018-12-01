@@ -1,6 +1,6 @@
-package KoffieAppDatabase.dal.specification;
+package KoffieAppDal.specification;
 
-import KoffieAppDatabase.dal.Criterial;
+import KoffieAppDal.Criterial;
 import org.hibernate.criterion.Criterion;
 
 public interface Specifiable extends Criterial {

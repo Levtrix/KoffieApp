@@ -1,18 +1,15 @@
 package KoffieAppRESTServer.handlers;
 
-import KoffieAppRESTServer.models.Drink;
-import KoffieAppRESTServer.models.Employee;
-import KoffieAppRESTServer.models.Order;
+import models.Drink;
+import models.Employee;
+import models.Order;
 import KoffieAppRESTServer.response.ErrorJson;
 import KoffieAppRESTServer.response.OrderJson;
 import KoffieAppRESTServer.response.Reply;
 import KoffieAppRESTServer.response.Status;
 import com.google.gson.Gson;
-import KoffieAppDatabase.dal.repository.DrinkRepository;
-import KoffieAppDatabase.dal.repository.EmployeeRepository;
-import KoffieAppDatabase.dal.repository.OrderRepository;
-import KoffieAppDatabase.logging.Logger;
-import KoffieAppDatabase.models.*;
+import KoffieAppDal.repository.OrderRepository;
+import logging.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,35 +17,22 @@ import java.util.List;
 
 public class OrderHandler implements IOrderHandler{
     private OrderRepository orderRepository;
-    private DrinkRepository drinkRepository;
-    private EmployeeRepository employeeRepository;
     private Gson gson;
 
-    public OrderHandler(OrderRepository orderRepository, DrinkRepository drinkRepository, EmployeeRepository employeeRepository) {
+    public OrderHandler(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
         this.gson = new Gson();
-        this.drinkRepository = drinkRepository;
-        this.employeeRepository = employeeRepository;
     }
 
     @Override
     public Reply getOrders() {
         try {
             addOrders();
-            List<Order> orders = new ArrayList<>();
             List<OrderJson> orderResponse = new ArrayList<>();
 
-            for (SQLOrder o : orderRepository.findAll()) {
-                SQLDrink tmp = drinkRepository.findOne(o.getDrinkId());
-                Drink drink = new Drink(tmp.getDrinkId(), tmp.getName());
-                SQLEmployee tmp1 = employeeRepository.findOne(o.getEmployeeId());
-                Employee employee = new Employee(tmp1.getEmployeeId(), tmp1.getFirstName(), tmp1.getLastName());
+            for (Order o : orderRepository.findAll()) {
 
-                orders.add(new Order(o.getDrinkId(), employee, drink, o.getSugarAmount(), o.getMilkAmount()));
-            }
-
-            for (Order o : orders) {
-                orderResponse.add(new OrderJson(o.getOrderId(), o.getEmployee(), o.getDrink(), o.getSugarAmount(), o.getMilkAmount()));
+                orderResponse.add(new OrderJson(o.getId(), o.getEmployee(), o.getDrink(), o.getSugarAmount(), o.getMilkAmount()));
             }
 
             String json = gson.toJson(orderResponse);
@@ -66,15 +50,9 @@ public class OrderHandler implements IOrderHandler{
     public Reply getOrder(int orderId) {
         if (orderId != 0) {
             try {
-                SQLOrder o = orderRepository.findOne(orderId);
-                SQLDrink tmp = drinkRepository.findOne(o.getDrinkId());
-                Drink drink = new Drink(tmp.getDrinkId(), tmp.getName());
-                SQLEmployee tmp1 = employeeRepository.findOne(o.getEmployeeId());
-                Employee employee = new Employee(tmp1.getEmployeeId(), tmp1.getFirstName(), tmp1.getLastName());
+                Order o = orderRepository.findOne(orderId);
 
-                Order order = new Order(o.getDrinkId(), employee, drink, o.getSugarAmount(), o.getMilkAmount());
-
-                String json = gson.toJson(new OrderJson(order.getOrderId(), order.getEmployee(), order.getDrink(), order.getSugarAmount(), order.getMilkAmount()));
+                String json = gson.toJson(new OrderJson(o.getId(), o.getEmployee(), o.getDrink(), o.getSugarAmount(), o.getMilkAmount()));
 
                 return new Reply(Status.OK, json);
             } catch (Exception e) {
@@ -93,17 +71,10 @@ public class OrderHandler implements IOrderHandler{
 
     @Override
     public Reply saveOrder(Order order) {
-        SQLOrder saved = orderRepository.save(new SQLOrder(order.getOrderId(), order.getEmployee().getEmployeeId(), order.getDrink().getDrinkId(), order.getSugarAmount(), order.getMilkAmount()));
+        Order saved = orderRepository.save(order);
 
-        if (saved.getOrderId() == order.getOrderId()) {
-            SQLDrink tmp = drinkRepository.findOne(saved.getDrinkId());
-            Drink drink = new Drink(tmp.getDrinkId(), tmp.getName());
-            SQLEmployee tmp1 = employeeRepository.findOne(saved.getEmployeeId());
-            Employee employee = new Employee(tmp1.getEmployeeId(), tmp1.getFirstName(), tmp1.getLastName());
-
-            Order order1 = new Order(saved.getOrderId(), employee, drink, saved.getSugarAmount(), saved.getMilkAmount());
-
-            return new Reply(Status.OK, gson.toJson(order1));
+        if (saved.getId() == order.getId()) {
+            return new Reply(Status.OK, gson.toJson(new Order(saved.getId(), saved.getEmployee(), saved.getDrink(), saved.getSugarAmount(), saved.getMilkAmount())));
         }
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
@@ -125,12 +96,22 @@ public class OrderHandler implements IOrderHandler{
     }
 
     private void addOrders() {
-        SQLOrder order1 = new SQLOrder(2, 1, 1, 1);
-        SQLOrder order2 = new SQLOrder(0, 0, 2, 4);
-        SQLOrder order3 = new SQLOrder(2, 0, 1, 3);
+        Employee employee1 = new Employee(1, "Henk", "Ruijter");
+        Employee employee2 = new Employee(2, "Sanne", "Pell");
+
+        Drink drink1 = new Drink(1, "Koffie");
+        Drink drink2 = new Drink(2, "Thee");
+        Drink drink3 = new Drink(3,"Cappuccino");
+        Drink drink4 = new Drink(4,"Latte");
+
+        Order order1 = new Order(employee1, drink1, 2, 1);
+        Order order2 = new Order(employee1, drink3, 1, 0);
+        Order order3 = new Order(employee2, drink2, 1, 3);
+        Order order4 = new Order(employee2, drink4, 1, 1);
 
         orderRepository.save(order1);
         orderRepository.save(order2);
         orderRepository.save(order3);
+        orderRepository.save(order4);
     }
 }

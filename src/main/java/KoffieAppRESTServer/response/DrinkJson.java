@@ -1,19 +1,19 @@
 package KoffieAppRESTServer.response;
 
 public class DrinkJson {
-    private int drinkId;
+    private int id;
     private String name;
 
-    public int getDrinkId() {
-        return drinkId;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
         return name;
     }
 
-    public DrinkJson(int drinkId, String name) {
-        this.drinkId = drinkId;
+    public DrinkJson(int id, String name) {
+        this.id = id;
         this.name = name;
     }
 }

@@ -1,4 +1,4 @@
-package KoffieAppDatabase.dal;
+package KoffieAppDal;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

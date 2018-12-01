@@ -1,6 +1,6 @@
-package KoffieAppDatabase.dal.repository;
+package KoffieAppDal.repository;
 
-import KoffieAppDatabase.dal.specification.Specifiable;
+import KoffieAppDal.specification.Specifiable;
 import org.hibernate.Session;
 
 import javax.transaction.Transactional;

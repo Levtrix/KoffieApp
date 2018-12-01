@@ -1,15 +1,29 @@
-package KoffieAppRESTServer.models;
+package models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "order_table")
 public class Order {
-    private int orderId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
+    @ManyToOne(optional =  false)
     private Employee employee;
+
+    @ManyToOne(optional = false)
     private Drink drink;
+
+    @Column(name = "sugaramount", nullable = false)
     private int sugarAmount;
+
+    @Column(name = "milkamount", nullable = false)
     private int milkAmount;
 
     // Getters and setters
-    public int getOrderId() {
-        return orderId;
+    public int getId() {
+        return id;
     }
 
     public Employee getEmployee() {
@@ -54,8 +68,8 @@ public class Order {
         this.milkAmount = milkAmount;
     }
 
-    public Order(int orderId, Employee employee, Drink drink, int sugarAmount, int milkAmount) {
-        this.orderId = orderId;
+    public Order(int id, Employee employee, Drink drink, int sugarAmount, int milkAmount) {
+        this.id = id;
         this.employee = employee;
         this.drink = drink;
         this.sugarAmount = sugarAmount;

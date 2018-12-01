@@ -2,16 +2,15 @@ package KoffieAppRESTServer.restservices;
 
 import KoffieAppRESTServer.handlers.IDrinkHandler;
 import KoffieAppRESTServer.response.Reply;
-import com.google.gson.Gson;
-import KoffieAppRESTServer.models.Drink;
+import models.Drink;
+import utils.GsonUtils;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/KoffieApp/drink")
+@Path("/drink")
 public class DrinkService {
     private static IDrinkHandler handler;
-    private Gson gson = new Gson();
 
     public static void setHandler(IDrinkHandler handler) {
         DrinkService.handler = handler;
@@ -37,7 +36,7 @@ public class DrinkService {
     @Path("/save")
     @Consumes("application/json")
     public Response saveDrink(String data) {
-        Drink drink = gson.fromJson(data, Drink.class);
+        Drink drink = GsonUtils.fromJson(data, Drink.class);
 
         Reply reply = handler.saveDrink(drink);
 

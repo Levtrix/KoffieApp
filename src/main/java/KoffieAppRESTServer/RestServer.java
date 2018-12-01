@@ -4,10 +4,10 @@ import KoffieAppRESTServer.handlers.*;
 import KoffieAppRESTServer.restservices.DrinkService;
 import KoffieAppRESTServer.restservices.EmployeeService;
 import KoffieAppRESTServer.restservices.OrderService;
-import KoffieAppDatabase.dal.repository.DrinkRepository;
-import KoffieAppDatabase.dal.repository.EmployeeRepository;
-import KoffieAppDatabase.dal.repository.OrderRepository;
-import KoffieAppDatabase.logging.Logger;
+import KoffieAppDal.repository.DrinkRepository;
+import KoffieAppDal.repository.EmployeeRepository;
+import KoffieAppDal.repository.OrderRepository;
+import logging.Logger;
 import org.eclipse.jetty.server.*;
 import org.eclipse.jetty.servlet.FilterHolder;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -41,7 +41,7 @@ public class RestServer {
         // Creating handlers
         IDrinkHandler drinkHandler = new DrinkHandler(new DrinkRepository());
         IEmployeeHandler employeeHandler = new EmployeeHandler(new EmployeeRepository());
-        IOrderHandler orderHandler = new OrderHandler(new OrderRepository(), new DrinkRepository(), new EmployeeRepository());
+        IOrderHandler orderHandler = new OrderHandler(new OrderRepository());
 
         DrinkService.setHandler(drinkHandler);
         EmployeeService.setHandler(employeeHandler);

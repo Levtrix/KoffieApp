@@ -1,14 +1,13 @@
 package KoffieAppRESTServer.handlers;
 
-import KoffieAppRESTServer.models.Drink;
+import models.Drink;
 import KoffieAppRESTServer.response.DrinkJson;
 import KoffieAppRESTServer.response.ErrorJson;
 import KoffieAppRESTServer.response.Reply;
 import KoffieAppRESTServer.response.Status;
 import com.google.gson.Gson;
-import KoffieAppDatabase.dal.repository.DrinkRepository;
-import KoffieAppDatabase.logging.Logger;
-import KoffieAppDatabase.models.SQLDrink;
+import KoffieAppDal.repository.DrinkRepository;
+import logging.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +27,8 @@ public class DrinkHandler implements IDrinkHandler{
             //addDrinks();
             List<DrinkJson> drinkReponse = new ArrayList<>();
 
-            for (SQLDrink d : drinkRepository.findAll()) {
-                drinkReponse.add(new DrinkJson(d.getDrinkId(), d.getName()));
+            for (Drink d : drinkRepository.findAll()) {
+                drinkReponse.add(new DrinkJson(d.getId(), d.getName()));
             }
 
             String json = gson.toJson(drinkReponse);
@@ -44,8 +43,8 @@ public class DrinkHandler implements IDrinkHandler{
 
     @Override
     public Reply getDrink(int drinkId) {
-        SQLDrink tmp = drinkRepository.findOne(drinkId);
-        Drink drink = new Drink(tmp.getDrinkId(), tmp.getName());
+        Drink tmp = drinkRepository.findOne(drinkId);
+        Drink drink = new Drink(tmp.getId(), tmp.getName());
 
         if (drink != null) {
             String json = gson.toJson(drink);
@@ -60,10 +59,10 @@ public class DrinkHandler implements IDrinkHandler{
 
     @Override
     public Reply saveDrink(Drink drink) {
-        SQLDrink saved = drinkRepository.save(new SQLDrink(drink.getDrinkId(), drink.getName()));
+        Drink saved = drinkRepository.save(new Drink(drink.getId(), drink.getName()));
         
-        if (saved.getDrinkId() == drink.getDrinkId()) {
-            return new Reply(Status.OK, gson.toJson(new Drink(saved.getDrinkId(), saved.getName())));
+        if (saved.getId() == drink.getId()) {
+            return new Reply(Status.OK, gson.toJson(new Drink(saved.getId(), saved.getName())));
         }
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
@@ -84,10 +83,10 @@ public class DrinkHandler implements IDrinkHandler{
     }
 
     private void addDrinks() {
-        SQLDrink drink1 = new SQLDrink("Koffie");
-        SQLDrink drink2 = new SQLDrink("Thee");
-        SQLDrink drink3 = new SQLDrink("Cappucchinno");
-        SQLDrink drink4 = new SQLDrink("Latte");
+        Drink drink1 = new Drink("Koffie");
+        Drink drink2 = new Drink("Thee");
+        Drink drink3 = new Drink("Cappuccino");
+        Drink drink4 = new Drink("Latte");
 
         drinkRepository.save(drink1);
         drinkRepository.save(drink2);

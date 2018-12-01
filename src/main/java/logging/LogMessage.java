@@ -1,4 +1,4 @@
-package KoffieAppDatabase.logging;
+package logging;
 
 public class LogMessage {
 

@@ -1,6 +1,5 @@
 package models;
 
-import KoffieAppRESTServer.models.*;
 import org.junit.*;
 
 import static org.junit.Assert.*;

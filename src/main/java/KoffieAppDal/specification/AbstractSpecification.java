@@ -1,4 +1,4 @@
-package KoffieAppDatabase.dal.specification;
+package KoffieAppDal.specification;
 
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Criterion;

@@ -1,4 +1,4 @@
-package KoffieAppDatabase.logging;
+package logging;
 
 import java.util.ArrayList;
 import java.util.List;

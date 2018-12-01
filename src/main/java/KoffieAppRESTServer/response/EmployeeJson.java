@@ -1,12 +1,12 @@
 package KoffieAppRESTServer.response;
 
 public class EmployeeJson {
-    private int employeeId;
+    private int id;
     private String firstName;
     private String lastName;
 
-    public int getEmployeeId() {
-        return employeeId;
+    public int getId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -17,8 +17,8 @@ public class EmployeeJson {
         return lastName;
     }
 
-    public EmployeeJson(int employeeId, String firstName, String lastName) {
-        this.employeeId = employeeId;
+    public EmployeeJson(int id, String firstName, String lastName) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
     }

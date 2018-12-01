@@ -1,4 +1,4 @@
-package KoffieAppDatabase.dal;
+package KoffieAppDal;
 
 import java.util.Calendar;
 import java.util.Date;

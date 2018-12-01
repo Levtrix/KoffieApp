@@ -8,5 +8,18 @@ Een beetje koffieautomaat kan ook verschillende soorten koffie (zwart, crème, l
 
 Als je eenmaal verder bent kun je ook badges uit gaan delen voor de collega die het vaakst koffie gaat halen, of degene die de meeste koffie heeft besteld. Je kunt ook statistieken laten zien en grafieken tekenen. Ook kun je zien wanneer de kans het grootst is op een rustig bezoek aan de automaat gebaseerd op de historische gegevens. Uitbreidingsmogelijkheden te over!
 
-#### Url:
-http://localhost:8095/KoffieApp
+#### URL's:
+http://localhost:8095/
+
+/drink/all<br>
+/drink/{id}<br>
+/drink/delete/{id}<br>
+
+/employee/all<br>
+/employee/{id}<br>
+/employee/save<br>
+
+/order/all<br>
+/order/{id}<br>
+/order/edit<br>
+/order/delete/{id}<br>

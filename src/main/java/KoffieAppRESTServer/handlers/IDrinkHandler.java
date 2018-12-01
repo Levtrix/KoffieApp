@@ -1,7 +1,7 @@
 package KoffieAppRESTServer.handlers;
 
 import KoffieAppRESTServer.response.Reply;
-import KoffieAppRESTServer.models.Drink;
+import models.Drink;
 
 public interface IDrinkHandler {
     Reply getDrinks();

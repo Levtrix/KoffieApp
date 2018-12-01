@@ -1,11 +1,11 @@
-package KoffieAppDatabase.dal.specification;
+package KoffieAppDal.specification;
 
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
 
-public class DrinkSpecification {
+public class OrderSpecification {
 
-    private DrinkSpecification() {
+    private OrderSpecification() {
         throw new IllegalStateException("Utility class");
     }
 

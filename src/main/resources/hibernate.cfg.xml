@@ -44,9 +44,9 @@
         <property name="hbm2ddl.auto">update</property> <!--create or update-->
 
         <!-- The mapping information of entities -->
-        <mapping class="KoffieAppDatabase.models.SQLOrder"/>
-        <mapping class="KoffieAppDatabase.models.SQLDrink"/>
-        <mapping class="KoffieAppDatabase.models.SQLEmployee"/>
+        <mapping class="models.Drink"/>
+        <mapping class="models.Employee"/>
+        <mapping class="models.Order"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -1,7 +1,7 @@
 package KoffieAppRESTServer.handlers;
 
 import KoffieAppRESTServer.response.Reply;
-import KoffieAppRESTServer.models.Employee;
+import models.Employee;
 
 public interface IEmployeeHandler {
     Reply getEmployees();

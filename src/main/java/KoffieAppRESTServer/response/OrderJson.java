@@ -1,17 +1,17 @@
 package KoffieAppRESTServer.response;
 
-import KoffieAppRESTServer.models.Drink;
-import KoffieAppRESTServer.models.Employee;
+import models.Drink;
+import models.Employee;
 
 public class OrderJson {
-    private int orderId;
+    private int id;
     private Employee employee;
     private Drink drink;
     private int sugarAmount;
     private int milkAmount;
 
-    public int getOrderId() {
-        return orderId;
+    public int getId() {
+        return id;
     }
 
     public Employee getEmployee() {
@@ -30,8 +30,8 @@ public class OrderJson {
         return milkAmount;
     }
 
-    public OrderJson(int orderId, Employee employee, Drink drink, int sugarAmount, int milkAmount) {
-        this.orderId = orderId;
+    public OrderJson(int id, Employee employee, Drink drink, int sugarAmount, int milkAmount) {
+        this.id = id;
         this.employee = employee;
         this.drink = drink;
         this.sugarAmount = sugarAmount;

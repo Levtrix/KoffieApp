@@ -1,8 +1,8 @@
-package KoffieAppDatabase.dal.repository;
+package KoffieAppDal.repository;
 
-import KoffieAppDatabase.dal.HibernateUtil;
-import KoffieAppDatabase.dal.Util;
-import KoffieAppDatabase.dal.specification.Specifiable;
+import KoffieAppDal.HibernateUtil;
+import KoffieAppDal.Util;
+import KoffieAppDal.specification.Specifiable;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

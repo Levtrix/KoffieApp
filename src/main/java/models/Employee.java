@@ -1,24 +1,23 @@
-package KoffieAppDatabase.models;
+package models;
 
-import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "employee_table")
-public class SQLEmployee {
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int employeeId;
+    private int id;
 
-    @Column(name = "firstName", nullable = false)
+    @Column(name = "firstname", nullable = false)
     private String firstName;
 
-    @Column(name = "lastName", nullable = false)
+    @Column(name = "lastname", nullable = false)
     private String lastName;
 
     // Getters and setters
-    public int getEmployeeId() {
-        return employeeId;
+    public int getId() {
+        return id;
     }
 
     public String getFirstName() {
@@ -30,23 +29,29 @@ public class SQLEmployee {
     }
 
     public String getLastName() {
-        return  lastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public SQLEmployee() {}
+    // Constructors
+    public Employee() {}
 
-    public SQLEmployee(String firstName, String lastName) {
+    public Employee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public SQLEmployee(int employeeId, String firstName, String lastName) {
-        this.employeeId = employeeId;
+    public Employee(int id, String firstName, String lastName) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
     }
 }

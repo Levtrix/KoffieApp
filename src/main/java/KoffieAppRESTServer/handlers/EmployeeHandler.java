@@ -5,10 +5,9 @@ import KoffieAppRESTServer.response.ErrorJson;
 import KoffieAppRESTServer.response.Reply;
 import KoffieAppRESTServer.response.Status;
 import com.google.gson.Gson;
-import KoffieAppDatabase.dal.repository.EmployeeRepository;
-import KoffieAppDatabase.logging.Logger;
-import KoffieAppRESTServer.models.Employee;
-import KoffieAppDatabase.models.SQLEmployee;
+import KoffieAppDal.repository.EmployeeRepository;
+import logging.Logger;
+import models.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,15 +26,10 @@ public class EmployeeHandler implements IEmployeeHandler {
     public Reply getEmployees() {
         try {
             addEmployees();
-            List<Employee> employees = new ArrayList<>();
             List<EmployeeJson> employeeResponse = new ArrayList<>();
 
-            for (SQLEmployee e : employeeRepository.findAll()) {
-                employees.add(new Employee(e.getEmployeeId(), e.getFirstName(), e.getLastName()));
-            }
-
-            for (Employee e : employees) {
-                employeeResponse.add(new EmployeeJson(e.getEmployeeId(), e.getFirstName(), e.getLastName()));
+            for (Employee e : employeeRepository.findAll()) {
+                employeeResponse.add(new EmployeeJson(e.getId(), e.getFirstName(), e.getLastName()));
             }
 
             String json = gson.toJson(employeeResponse);
@@ -50,8 +44,8 @@ public class EmployeeHandler implements IEmployeeHandler {
 
     @Override
     public Reply getEmployee(int employeeId) {
-        SQLEmployee tmp = employeeRepository.findOne(employeeId);
-        Employee employee = new Employee(tmp.getEmployeeId(), tmp.getFirstName(), tmp.getFirstName());
+        Employee tmp = employeeRepository.findOne(employeeId);
+        Employee employee = new Employee(tmp.getId(), tmp.getFirstName(), tmp.getFirstName());
 
         if (employee != null) {
             String json = gson.toJson(employee);
@@ -65,10 +59,10 @@ public class EmployeeHandler implements IEmployeeHandler {
 
     @Override
     public Reply saveEmployee(Employee employee) {
-        SQLEmployee saved = employeeRepository.save(new SQLEmployee(employee.getEmployeeId(), employee.getFirstName(), employee.getLastName()));
+        Employee saved = employeeRepository.save(new Employee(employee.getId(), employee.getFirstName(), employee.getLastName()));
 
-        if (saved.getEmployeeId() == employee.getEmployeeId()) {
-            return new Reply(Status.OK, gson.toJson(new Employee(saved.getEmployeeId(), saved.getFirstName(), saved.getLastName())));
+        if (saved.getId() == employee.getId()) {
+            return new Reply(Status.OK, gson.toJson(new Employee(saved.getId(), saved.getFirstName(), saved.getLastName())));
         }
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
@@ -76,8 +70,8 @@ public class EmployeeHandler implements IEmployeeHandler {
     }
 
     private void addEmployees() {
-        SQLEmployee employee1 = new SQLEmployee("Henk", "Ruijter");
-        SQLEmployee employee2 = new SQLEmployee("Sanne", "Pell");
+        Employee employee1 = new Employee("Henk", "Ruijter");
+        Employee employee2 = new Employee("Sanne", "Pell");
 
         employeeRepository.save(employee1);
         employeeRepository.save(employee2);

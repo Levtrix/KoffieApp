@@ -3,15 +3,15 @@ package KoffieAppRESTServer.restservices;
 import KoffieAppRESTServer.handlers.IEmployeeHandler;
 import KoffieAppRESTServer.response.Reply;
 import com.google.gson.Gson;
-import KoffieAppRESTServer.models.Employee;
+import models.Employee;
+import utils.GsonUtils;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/KoffieApp/employee")
+@Path("/employee")
 public class EmployeeService {
     private static IEmployeeHandler handler;
-    private Gson gson = new Gson();
 
     public static void setHandler(IEmployeeHandler handler) {
         EmployeeService.handler = handler;
@@ -37,7 +37,7 @@ public class EmployeeService {
     @Path("/save")
     @Consumes("application/json")
     public Response saveEmployee(String data) {
-        Employee employee = gson.fromJson(data, Employee.class);
+        Employee employee = GsonUtils.fromJson(data, Employee.class);
 
         Reply reply = handler.saveEmployee(employee);
 
