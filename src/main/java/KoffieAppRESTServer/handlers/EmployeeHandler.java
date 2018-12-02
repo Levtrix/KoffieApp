@@ -44,8 +44,7 @@ public class EmployeeHandler implements IEmployeeHandler {
 
     @Override
     public Reply getEmployee(int employeeId) {
-        Employee tmp = employeeRepository.findOne(employeeId);
-        Employee employee = new Employee(tmp.getId(), tmp.getFirstName(), tmp.getFirstName());
+        Employee employee = employeeRepository.findOne(employeeId);
 
         if (employee != null) {
             String json = gson.toJson(employee);
@@ -59,10 +58,10 @@ public class EmployeeHandler implements IEmployeeHandler {
 
     @Override
     public Reply saveEmployee(Employee employee) {
-        Employee saved = employeeRepository.save(new Employee(employee.getId(), employee.getFirstName(), employee.getLastName()));
+        Employee saved = employeeRepository.save(employee);
 
         if (saved.getId() == employee.getId()) {
-            return new Reply(Status.OK, gson.toJson(new Employee(saved.getId(), saved.getFirstName(), saved.getLastName())));
+            return new Reply(Status.OK, gson.toJson(saved));
         }
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");

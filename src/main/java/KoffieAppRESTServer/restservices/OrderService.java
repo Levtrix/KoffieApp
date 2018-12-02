@@ -57,6 +57,7 @@ public class OrderService {
 
     @DELETE
     @Path("/delete/{id}")
+    @Consumes("application/json")
     public Response deleteOrder(@PathParam("id") int orderId) {
         Reply reply = handler.deleteOrder(orderId);
 

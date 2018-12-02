@@ -43,8 +43,20 @@ public class DrinkService {
         return Response.status(reply.getStatus().getCode()).entity(reply.getMessage()).build();
     }
 
+    @PUT
+    @Path("/edit")
+    @Consumes("application/json")
+    public Response editDrink(String data) {
+        Drink drink = GsonUtils.fromJson(data, Drink.class);
+
+        Reply reply = handler.saveDrink(drink);
+
+        return Response.status(reply.getStatus().getCode()).entity(reply.getMessage()).build();
+    }
+
     @DELETE
     @Path("delete/{id}")
+    @Consumes("application/json")
     public Response deleteDrink(@PathParam("id") int drinkId) {
         Reply reply = handler.deleteDrink(drinkId);
 

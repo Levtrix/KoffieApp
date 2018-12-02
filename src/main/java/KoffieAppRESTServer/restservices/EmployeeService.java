@@ -43,4 +43,15 @@ public class EmployeeService {
 
         return Response.status(reply.getStatus().getCode()).entity(reply.getMessage()).build();
     }
+
+    @PUT
+    @Path("/edit")
+    @Consumes("application/json")
+    public Response editEmployee(String data) {
+        Employee employee = GsonUtils.fromJson(data, Employee.class);
+
+        Reply reply = handler.saveEmployee(employee);
+
+        return Response.status(reply.getStatus().getCode()).entity(reply.getMessage()).build();
+    }
 }

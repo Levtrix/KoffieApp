@@ -21,10 +21,7 @@
             org.mariadb.jdbc.Driver
         </property>
 
-        <!-- Assume test is the database name -->
-
         <property name = "hibernate.connection.url">
-            <!--jdbc:mysql://studmysql01.fhict.local/dbi356515-->
             jdbc:mariadb://koffie.gledant.nl/dbi356515
         </property>
 

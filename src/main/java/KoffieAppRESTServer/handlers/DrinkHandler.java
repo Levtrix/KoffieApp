@@ -43,8 +43,7 @@ public class DrinkHandler implements IDrinkHandler{
 
     @Override
     public Reply getDrink(int drinkId) {
-        Drink tmp = drinkRepository.findOne(drinkId);
-        Drink drink = new Drink(tmp.getId(), tmp.getName());
+        Drink drink = drinkRepository.findOne(drinkId);
 
         if (drink != null) {
             String json = gson.toJson(drink);
@@ -59,10 +58,10 @@ public class DrinkHandler implements IDrinkHandler{
 
     @Override
     public Reply saveDrink(Drink drink) {
-        Drink saved = drinkRepository.save(new Drink(drink.getId(), drink.getName()));
+        Drink saved = drinkRepository.save(drink);
         
         if (saved.getId() == drink.getId()) {
-            return new Reply(Status.OK, gson.toJson(new Drink(saved.getId(), saved.getName())));
+            return new Reply(Status.OK, gson.toJson(saved));
         }
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
@@ -73,8 +72,9 @@ public class DrinkHandler implements IDrinkHandler{
     public Reply deleteDrink(int drinkId) {
         try {
             drinkRepository.delete(drinkId);
+            ErrorJson messageJson = new ErrorJson("Deleted");
 
-            return new Reply(Status.OK, gson.toJson(drinkId));
+            return new Reply(Status.OK, gson.toJson(messageJson));
         } catch (Exception e) {
             ErrorJson errorJson = new ErrorJson("Something went wrong");
 

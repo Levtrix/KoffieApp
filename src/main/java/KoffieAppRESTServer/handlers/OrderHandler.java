@@ -48,25 +48,16 @@ public class OrderHandler implements IOrderHandler{
 
     @Override
     public Reply getOrder(int orderId) {
-        if (orderId != 0) {
-            try {
-                Order o = orderRepository.findOne(orderId);
+        Order order = orderRepository.findOne(orderId);
 
-                String json = gson.toJson(new OrderJson(o.getId(), o.getEmployee(), o.getDrink(), o.getSugarAmount(), o.getMilkAmount()));
+        if (order != null) {
+            String json = gson.toJson(order);
 
-                return new Reply(Status.OK, json);
-            } catch (Exception e) {
-                Logger.getInstance().log(e);
-                ErrorJson errorJson = new ErrorJson("Something went wrong");
-
-                return new Reply(Status.ERROR, gson.toJson(errorJson));
-            }
+            return new Reply(Status.OK, json);
         }
-        else {
-            ErrorJson errorJson = new ErrorJson("Something went wrong");
 
-            return new Reply(Status.ERROR, gson.toJson(errorJson));
-        }
+        ErrorJson errorJson = new ErrorJson("Something went wrong");
+        return new Reply(Status.ERROR, gson.toJson(errorJson));
     }
 
     @Override
@@ -74,7 +65,7 @@ public class OrderHandler implements IOrderHandler{
         Order saved = orderRepository.save(order);
 
         if (saved.getId() == order.getId()) {
-            return new Reply(Status.OK, gson.toJson(new Order(saved.getId(), saved.getEmployee(), saved.getDrink(), saved.getSugarAmount(), saved.getMilkAmount())));
+            return new Reply(Status.OK, gson.toJson(saved));
         }
 
         ErrorJson errorJson = new ErrorJson("Something went wrong");
