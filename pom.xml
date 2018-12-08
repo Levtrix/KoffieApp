@@ -34,12 +34,9 @@
                      <archive>
                          <manifest>
                              <addClasspath>true</addClasspath>
-                             <mainClass>com.oracle.deploy.KoffieAppRESTServer.RestServer</mainClass>
+                             <mainClass>KoffieAppRESTServer.RestServer</mainClass>
                          </manifest>
                      </archive>
-                     <descriptorRefs>
-                         <descriptorRef>jar-with-dependencies</descriptorRef>
-                     </descriptorRefs>
                  </configuration>
              </plugin>
         </plugins>
