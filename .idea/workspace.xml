@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe6060d8-5682-4d5e-a903-d026cffb6993" name="Default Changelist" comment="Edited POM">
+    <list default="true" id="fe6060d8-5682-4d5e-a903-d026cffb6993" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -52,17 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            <state relative-caret-position="459">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -197,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544290388238" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544290873739" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -418,7 +409,7 @@
       <workItem from="1544270009922" duration="16000" />
       <workItem from="1544270079773" duration="46000" />
       <workItem from="1544270197112" duration="701000" />
-      <workItem from="1544270929459" duration="10195000" />
+      <workItem from="1544270929459" duration="10680000" />
     </task>
     <task id="LOCAL-00001" summary="Moved databse to personal server + edited connection details">
       <created>1543347371842</created>
@@ -483,12 +474,12 @@
       <option name="project" value="LOCAL" />
       <updated>1544287650419</updated>
     </task>
-    <task id="LOCAL-00010" summary="Fixed pom">
-      <created>1542033876679</created>
+    <task id="LOCAL-00010" summary="Added mainClass location to POM">
+      <created>1544290416645</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1542033876679</updated>
+      <updated>1544290416645</updated>
     </task>
     <task id="LOCAL-00011" summary="Implemented ORM + REST server. Unit Testing still needs to be added">
       <created>1542116219162</created>
@@ -588,11 +579,11 @@
       <option name="project" value="LOCAL" />
       <updated>1543332355730</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48151000" />
+    <option name="totallyTimeSpent" value="48636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -698,7 +689,8 @@
     <MESSAGE value="Removed code which was adding database entries" />
     <MESSAGE value="Deleted documentation" />
     <MESSAGE value="Edited POM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited POM" />
+    <MESSAGE value="Added mainClass location to POM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mainClass location to POM" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -930,14 +922,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="459">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>

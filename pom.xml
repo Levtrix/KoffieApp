@@ -27,7 +27,7 @@
                  <configuration>
                      <archive>
                          <manifest>
-                             <mainClass>com.maven.KoffieAppRESTServer.RestServer</mainClass>
+                             <mainClass>KoffieAppRESTServer.RestServer</mainClass>
                          </manifest>
                      </archive>
                  </configuration>
