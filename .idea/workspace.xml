@@ -7,17 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe6060d8-5682-4d5e-a903-d026cffb6993" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/KoffieApp.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/KoffieApp_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/RestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/RestServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,89 +47,72 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dbi356515: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="dbi356515: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1582651278">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="146" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="146" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1502692141">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="MF" value="1" />
-          <entry key="class" value="1" />
-          <entry key="java" value="116" />
-          <entry key="md" value="5" />
-          <entry key="xml" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="116" />
-          <entry key="Manifest" value="1" />
-          <entry key="Markdown" value="5" />
-          <entry key="XML" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="18" />
-          <entry key="java" value="1750" />
-          <entry key="md" value="171" />
-          <entry key="txt" value="152" />
-          <entry key="xml" value="331" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1750" />
-          <entry key="Markdown" value="171" />
-          <entry key="PLAIN_TEXT" value="170" />
-          <entry key="XML" value="331" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-182">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -169,22 +148,16 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Drink.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/OrderService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/RestServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -215,6 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,37 +220,19 @@
               <item name="KoffieApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="KoffieAppRESTServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoffieApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoffieApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="KoffieAppRESTServer" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KoffieApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KoffieApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543754541446" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544285848560" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -356,13 +313,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="E2E Tests (KoffieAppFrontEnd)" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+    <configuration name="E2E Tests (KoffieAppFrontEnd)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/KoffieAppFrontEnd/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-options value="" />
       <envs />
+      <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="Angular Application (KoffieAppFrontEnd)" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:4200">
+    <configuration name="Angular Application (KoffieAppFrontEnd)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
@@ -412,7 +371,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Angular CLI Server (KoffieAppFrontEnd)" type="js.build_tools.npm" factoryName="npm">
+    <configuration name="Angular CLI Server (KoffieAppFrontEnd)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/KoffieAppFrontEnd/package.json" />
       <command value="run" />
       <scripts>
@@ -423,13 +382,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.Angular Application (KoffieAppFrontEnd)" />
-      <item itemvalue="Protractor.E2E Tests (KoffieAppFrontEnd)" />
-      <item itemvalue="npm.Angular CLI Server (KoffieAppFrontEnd)" />
-      <item itemvalue="JUnit.models in KoffieApp" />
       <item itemvalue="Application.RestServer" />
       <item itemvalue="Cucumber java.All Features in: test" />
+      <item itemvalue="JavaScript Debug.Angular Application (KoffieAppFrontEnd)" />
+      <item itemvalue="JUnit.models in KoffieApp" />
       <item itemvalue="JUnit.All in KoffieApp" />
+      <item itemvalue="npm.Angular CLI Server (KoffieAppFrontEnd)" />
+      <item itemvalue="Protractor.E2E Tests (KoffieAppFrontEnd)" />
     </list>
     <recent_temporary>
       <list>
@@ -486,7 +445,14 @@
       <workItem from="1543677503928" duration="7703000" />
       <workItem from="1543685244086" duration="5525000" />
       <workItem from="1543692161688" duration="46000" />
-      <workItem from="1543749401536" duration="4605000" />
+      <workItem from="1543749401536" duration="4981000" />
+      <workItem from="1543759606590" duration="837000" />
+      <workItem from="1543838399382" duration="683000" />
+      <workItem from="1544010651583" duration="1203000" />
+      <workItem from="1544270009922" duration="16000" />
+      <workItem from="1544270079773" duration="46000" />
+      <workItem from="1544270197112" duration="701000" />
+      <workItem from="1544270929459" duration="6288000" />
     </task>
     <task id="LOCAL-00001" summary="Moved databse to personal server + edited connection details">
       <created>1543347371842</created>
@@ -502,33 +468,33 @@
       <option name="project" value="LOCAL" />
       <updated>1543683668600</updated>
     </task>
-    <task id="LOCAL-00003" summary="First commit">
-      <created>1540806027335</created>
+    <task id="LOCAL-00003" summary="Added build steps and resolves bugs">
+      <created>1543755139377</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1540806027336</updated>
+      <updated>1543755139377</updated>
     </task>
-    <task id="LOCAL-00004" summary="Added documentation folder">
-      <created>1540807130713</created>
+    <task id="LOCAL-00004" summary="Removed code which was adding database entries">
+      <created>1544277545431</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1540807130713</updated>
+      <updated>1544277545431</updated>
     </task>
-    <task id="LOCAL-00005" summary="Finished basic project structure">
-      <created>1540809331031</created>
+    <task id="LOCAL-00005" summary="Deleted documentation">
+      <created>1544282571293</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1540809331031</updated>
+      <updated>1544282571293</updated>
     </task>
-    <task id="LOCAL-00006" summary="Finished basic project structure">
-      <created>1540809651345</created>
+    <task id="LOCAL-00006" summary="Deleted documentation">
+      <created>1544285410808</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1540809651345</updated>
+      <updated>1544285410808</updated>
     </task>
     <task id="LOCAL-00007" summary="Started adding REST server and database methods">
       <created>1542033538625</created>
@@ -656,17 +622,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543332355730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34094000" />
+    <option name="totallyTimeSpent" value="44244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -677,7 +643,7 @@
       <window_info id="npm" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822758" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.31419286" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.31419286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -689,16 +655,19 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.2585288" />
+      <window_info anchor="right" id="Database" order="6" weight="0.2585288" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3232422" />
@@ -739,9 +708,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Added documentation folder" />
@@ -762,7 +728,10 @@
     <MESSAGE value="Renamed hibernate config file" />
     <MESSAGE value="Moved databse to personal server + edited connection details" />
     <MESSAGE value="REST + hibernate overhaul" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST + hibernate overhaul" />
+    <MESSAGE value="Added build steps and resolves bugs" />
+    <MESSAGE value="Removed code which was adding database entries" />
+    <MESSAGE value="Deleted documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted documentation" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -787,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IDrinkHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -805,13 +767,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDatabase/models/SQLEmployee.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDatabase/models/SQLOrder.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/repository/OrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
@@ -874,23 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -909,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/repository/DrinkRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/repository/AbstractRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2277">
@@ -923,44 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1279">
-          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" column="95" selection-start-line="54" selection-start-column="95" selection-end-line="54" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -977,10 +874,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/repository/DrinkRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/IDrinkHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://88eb888c-f7d3-487a-be58-3c3be204801e/schema/dbi356515/table/employee_table">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/DrinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://88eb888c-f7d3-487a-be58-3c3be204801e/schema/dbi356515/table/drink_table">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppDal/repository/EmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/restservices/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="54" column="95" selection-start-line="54" selection-start-column="95" selection-end-line="54" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/DrinkHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/OrderHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KoffieAppRESTServer/handlers/EmployeeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
         </state>
       </provider>
     </entry>
