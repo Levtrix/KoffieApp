@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            <state relative-caret-position="493">
+              <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -191,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544291921987" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544292169532" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -412,7 +412,7 @@
       <workItem from="1544270009922" duration="16000" />
       <workItem from="1544270079773" duration="46000" />
       <workItem from="1544270197112" duration="701000" />
-      <workItem from="1544270929459" duration="11727000" />
+      <workItem from="1544270929459" duration="11975000" />
     </task>
     <task id="LOCAL-00001" summary="Moved databse to personal server + edited connection details">
       <created>1543347371842</created>
@@ -491,12 +491,12 @@
       <option name="project" value="LOCAL" />
       <updated>1544290888840</updated>
     </task>
-    <task id="LOCAL-00012" summary="Reworked entire project structure">
-      <created>1542210430256</created>
+    <task id="LOCAL-00012" summary="Edited POM">
+      <created>1544291942038</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1542210430256</updated>
+      <updated>1544291942038</updated>
     </task>
     <task id="LOCAL-00013" summary="Started with errorhandling">
       <created>1542212324003</created>
@@ -582,11 +582,11 @@
       <option name="project" value="LOCAL" />
       <updated>1543332355730</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49683000" />
+    <option name="totallyTimeSpent" value="49931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -931,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state relative-caret-position="493">
+          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
         </state>
       </provider>
     </entry>

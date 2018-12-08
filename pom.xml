@@ -27,6 +27,7 @@
                  <configuration>
                      <archive>
                          <manifest>
+                             <addClasspath>true</addClasspath>
                              <mainClass>KoffieAppRESTServer.RestServer</mainClass>
                          </manifest>
                      </archive>
