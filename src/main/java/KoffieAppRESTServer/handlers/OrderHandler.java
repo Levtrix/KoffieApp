@@ -27,7 +27,7 @@ public class OrderHandler implements IOrderHandler{
     @Override
     public Reply getOrders() {
         try {
-            addOrders();
+            //addOrders();
             List<OrderJson> orderResponse = new ArrayList<>();
 
             for (Order o : orderRepository.findAll()) {

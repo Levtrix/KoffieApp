@@ -25,7 +25,7 @@ public class EmployeeHandler implements IEmployeeHandler {
     @Override
     public Reply getEmployees() {
         try {
-            addEmployees();
+            //addEmployees();
             List<EmployeeJson> employeeResponse = new ArrayList<>();
 
             for (Employee e : employeeRepository.findAll()) {
