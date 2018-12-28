@@ -22,6 +22,9 @@ public class OrderHandler implements IOrderHandler{
     public OrderHandler(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
         this.gson = new Gson();
+
+        // Lets Hibernate create a database connection during server startup
+        orderRepository.findAll();
     }
 
     @Override
