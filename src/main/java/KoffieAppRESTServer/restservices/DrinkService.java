@@ -55,7 +55,7 @@ public class DrinkService {
     }
 
     @DELETE
-    @Path("delete/{id}")
+    @Path("/delete/{id}")
     @Consumes("application/json")
     public Response deleteDrink(@PathParam("id") int drinkId) {
         Reply reply = handler.deleteDrink(drinkId);

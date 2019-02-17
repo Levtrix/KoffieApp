@@ -22,7 +22,7 @@
         </property>
 
         <property name = "hibernate.connection.url">
-            jdbc:mariadb://koffie.gledant.nl/dbi356515
+            jdbc:mariadb://webdb01.gledant.nl/i356515_dbkoffie
         </property>
 
         <property name = "hibernate.connection.username">
@@ -30,7 +30,7 @@
         </property>
 
         <property name = "hibernate.connection.password">
-            Qwerty1$
+            dbi356515
         </property>
 
 
