@@ -9,7 +9,7 @@ import utils.GsonUtils;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/employee")
+@Path("/koffieapp/employee")
 public class EmployeeService {
     private static IEmployeeHandler handler;
 

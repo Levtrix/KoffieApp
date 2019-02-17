@@ -8,7 +8,7 @@ import utils.GsonUtils;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/drink")
+@Path("/koffieapp/drink")
 public class DrinkService {
     private static IDrinkHandler handler;
 

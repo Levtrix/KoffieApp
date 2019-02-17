@@ -9,7 +9,7 @@ import utils.GsonUtils;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
-@Path("/order")
+@Path("/koffieapp/order")
 public class OrderService {
     private static IOrderHandler handler;
 
